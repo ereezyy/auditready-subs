@@ -1,0 +1,47 @@
+{
+  "name": "auditready-subs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 43123",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 43123",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "samples:generate": "tsx scripts/generate-samples.ts",
+    "stripe:products": "node scripts/create-stripe-products.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.5.0",
+    "@react-pdf/renderer": "^4.9.1",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.79.0",
+    "next": "16.4.6",
+    "pdf-lib": "^1.17.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "resend": "^6.39.0",
+    "server-only": "^0.0.1",
+    "stripe": "^23.2.0",
+    "tailwind-merge": "^3.7.1",
+    "unpdf": "^1.9.1"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.2.0",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
+  }
+}
