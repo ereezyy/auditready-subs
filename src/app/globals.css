@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-source), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --color-paper: #f3efe4;
+  --color-paper-deep: #e6decc;
+  --color-sheet: #fffcf6;
+  --color-ink: #1a2332;
+  --color-ink-soft: #4c596c;
+  --color-line: #d9d0c0;
+  --color-pine: #1b6b45;
+  --color-pine-bg: #e4f3ea;
+  --color-amber: #8a5a00;
+  --color-amber-bg: #f8edd4;
+  --color-signal: #8e2d2d;
+  --color-signal-bg: #f8e4e0;
+  --color-copper: #b85c2c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(900px 420px at 0% -10%, rgba(184, 92, 44, 0.12), transparent 55%),
+    radial-gradient(700px 380px at 100% 0%, rgba(27, 107, 69, 0.08), transparent 50%),
+    var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+}
+
+.sheet {
+  background: var(--color-sheet);
+  border: 1px solid var(--color-line);
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(26, 35, 50, 0.04), 0 16px 40px rgba(26, 35, 50, 0.05);
+}
+
+.form-error {
+  border: 1px solid #e4b6b0;
+  background: var(--color-signal-bg);
+  color: var(--color-signal);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.925rem;
+}
+
+.form-ok {
+  border: 1px solid #b7dcc6;
+  background: var(--color-pine-bg);
+  color: var(--color-pine);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.925rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+}
